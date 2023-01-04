@@ -16,3 +16,14 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.iconsearch {
+    filter: invert(1);
+}
+
+.maincolor {
+    background-color: #FC7666;
+}
+.maintextcolor {
+    color: #FC7666;
+}

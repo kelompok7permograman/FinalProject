@@ -1,15 +1,16 @@
 ﻿
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "UploadBuku";
     Layout = "~/Views/Shared/_MainPage.cshtml";
 }
+
 <div class="row">
 
     <!-- Main content -->
     <div class="col">
         <div class="card shadow mb-4">
             <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                <h6 class="m-0 font-weight-bold maintextcolor">Cari Buku</h6>
+                <h6 class="m-0 font-weight-bold maintextcolor">Upload Buku</h6>
             </div>
 
             <div class="card-body">
@@ -21,15 +22,23 @@
 
                         <form class="navbar-search">
                             <div class="input-group">
-                                <input type="text" class="form-control bg-light border-0" placeholder="Search for..."
+                                <input id="search-box" type="text" class="form-control bg-light border-0" placeholder="Cari buku melalui Google Books API"
                                        aria-label="Search" aria-describedby="basic-addon2">
                                 <div class="input-group-append">
-                                    <button class="btn" type="button" style="background-color: #FC7666;">
+                                    <button id="search" class="btn" type="button" style="background-color: #FC7666;">
                                         <img class="iconsearch" src="/lib/main-assets/img/search.svg" width="20px" />
                                     </button>
                                 </div>
                             </div>
                         </form>
+                        <div class="book-list">
+                            <div id="list-output" class="">
+                                <div class="row">
+                                <!-- card  -->
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

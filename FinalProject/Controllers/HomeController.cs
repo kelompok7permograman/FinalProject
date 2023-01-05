@@ -18,6 +18,16 @@ namespace FinalProject.Controllers
             return View();
         }
 
+        public IActionResult UploadBuku()
+        {
+            return View();
+        }
+
+        public IActionResult CariBuku()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();

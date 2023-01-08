@@ -107,7 +107,7 @@ $(document).ready(function () {
                                 </a>
                                 <div class="collapse show" id="collapseCardExample">
                                     <div class="card-body">
-                                        <p> ${description} </p>
+                                        <p> ${description} </p> 
                                     </div>
                                 </div>
                             </div>

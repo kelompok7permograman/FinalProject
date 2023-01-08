@@ -69,8 +69,8 @@ $(document).ready(function () {
 
             // in production code, item.text should have the HTML entities escaped.
             outputList.innerHTML += '<div class="row mt-4">' +
-                formatOutput(bookImg1, title1, author1, publisher1, bookIsbn) +
-                formatOutput(bookImg2, title2, author2, publisher2, bookIsbn2) +
+                formatOutput(bookImg1, title1, author1, publisher1, bookIsbn, description1) +
+                formatOutput(bookImg2, title2, author2, publisher2, bookIsbn2, description2) +
                 '</div>';
 
             console.log(outputList);
@@ -82,7 +82,7 @@ $(document).ready(function () {
     * @param bookImg title author publisher bookLink
     * @return htmlCard
     */
-    function formatOutput(bookImg, title, author, publisher, bookIsbn) {
+    function formatOutput(bookImg, title, author, publisher, bookIsbn, description) {
         var htmlCard = `<div class="col-lg-6">
        <div class="card" style="">
          <div class="row no-gutters">
@@ -96,8 +96,21 @@ $(document).ready(function () {
                <p class="card-text">Author: ${author}</p>
                <p class="card-text">Publisher: ${publisher}</p>
              </div>
+            
            </div>
          </div>
+        <div class="card border-0 mb-4">
+                                <!-- Card Header - Accordion -->
+                                <a href="#collapseCardExample" class="d-flex justify-content-center mt-4 bg-white py-3" data-toggle="collapse"
+                                    role="button" aria-expanded="true" aria-controls="collapseCardExample">
+                                    <h6 class="m-0 font-weight-bold" style="color: #FC7666;">${title} Description/Synopsis</h6>
+                                </a>
+                                <div class="collapse show" id="collapseCardExample">
+                                    <div class="card-body">
+                                        <p> ${description} </p>
+                                    </div>
+                                </div>
+                            </div>
        </div>
      </div>`
         return htmlCard;

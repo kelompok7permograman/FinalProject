@@ -4,7 +4,6 @@
 // Write your JavaScript code.
 
 $(document).ready(function () {
-    var item, tile, author, publisher, bookLink, bookImg;
     var outputList = document.getElementById("list-output");
     var bookUrl = "https://www.googleapis.com/books/v1/volumes?q=";
     var apiKey = "key=AIzaSyANz8xQJO0ppLVBpNz2SM3UiWuaJ-Ro564";

@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewData["Title"] = "Dashboard";
+    Layout = "~/Views/Shared/_MainPage.cshtml";
+}
+<div class="row">
+    <div class="col">
+        <div class="card shadow mb-4">
+            <div class="card-body d-flex justify-content-between">
+                <img class="card-img-left" src="~/lib/main-assets/img/HD.png" style="width:1050px;height:100px;" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="col">
+        <div class="card shadow mb-4">
+            <div class="card-body d-flex justify-content-between">
+                <div class="row">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Cari Buku</h5>
+                            <p class="card-text">Cari Buku merupakan fitur yang memungkinkan pengguna untuk mencari buku melalui Google Books API. Dengan menggunakan fitur cari buku, pengguna dapat dengan mudah menemukan buku yang diinginkan dan mengetahui informasi seperti deskripsi, author, publisher, dan ISBN.                      </p>
+                            <a asp-area="" asp-controller="Home" asp-action="CariBuku" class="btn btn-primary">Buka Menu</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Rekomendasi Buku</h5>
+                            <p class="card-text">Rekomendasi buku merupakan fitur yang memungkinkan sistem memberikan saran atau rekomendasi buku kepada pengguna berdasarkan genre. Dengan menggunakan fitur rekomendasi buku, pengguna dapat dengan mudah menemukan buku-buku baru yang mungkin menarik dan sesuai dengan minat dan kebutuhan.</p>
+                            <a asp-area="" asp-controller="Home" asp-action="RekomendasiBuku" class="btn btn-primary">Buka Menu</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Tentang Kami</h5>
+                            <p class="card-text">Tentang kami merupakan fitur yang berisi informasi tentang pengertian website kami dan informasi Kami yang mengelola dan mengembangkan website ini.                                                                                                                                            </p>
+                            <a asp-area="" asp-controller="Home" asp-action="TentangKami" class="btn btn-primary">Buka Menu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

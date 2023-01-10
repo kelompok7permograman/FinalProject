@@ -35,8 +35,10 @@
         <ul class="navbar-nav maincolor sidebar sidebar-dark accordion " id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-text mx-3" ><img class="card-img-right" src="~/lib/main-assets/img/logo.png" style="width:250px;height:250px"; /></div>
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" asp-area="" asp-controller="Home" asp-action="Dashboard">
+                <div class="sidebar-brand-text mx-3" >
+                    <img class="card-img-right" src="~/lib/main-assets/img/logo.png" style="width:250px;" />
+                </div>
             </a>
 
             <!-- Divider -->
@@ -44,15 +46,14 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">
+                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Dashboard">
                     <span>DASHBOARD</span>
                 </a>
             </li>
 
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item active">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                   aria-expanded="true" aria-controls="collapseTwo">
+            <li class="nav-item">
+                <a class="nav-link collapsed font-weight-bold" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
                     <span>Buku</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
@@ -79,7 +80,7 @@
 
                 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow"> 
-                    <img class="card-img-left" src="~/lib/main-assets/img/HD.png" style="width:1050px;height:100px"; />
+                   
 
                     <!-- Sidebar Toggle (Topbar) -->
                     
